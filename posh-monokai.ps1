@@ -74,6 +74,7 @@ Set-ItemProperty . QuickEdit              -type DWORD -value 0x00000001
 Set-ItemProperty . ScreenBufferSize       -type DWORD -value 0x03e7007d #ScreenBufferSize 125 w x 999 h
 Set-ItemProperty . ScreenColors           -type DWORD -value 0x0000008f # 8 = DarkGray | f = White
 Set-ItemProperty . WindowSize             -type DWORD -value 0x0028007d #WindowSize 125 w x 40 h
+Set-PSReadlineOption -TokenKind parameter -ForegroundColor white #Change parameter color
 
 Pop-Location
 
